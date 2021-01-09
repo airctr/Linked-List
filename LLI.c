@@ -14,11 +14,11 @@ node_t *head;
 
 void printList()
 {
-    node_t *ptr = head;                                    // Pointer to the current node
+    node_t *ptr = head;                                    
     while(ptr != NULL)
     {
-        printf("INDEX: %p DATA: %d NPTR: %p\n", ptr, ptr->data, ptr->next);    // Print data
-        ptr = ptr->next;                                        // Go to the next node
+        printf("INDEX: %p DATA: %d NPTR: %p\n", ptr, ptr->data, ptr->next); 
+        ptr = ptr->next;                                        
     }
 
     head == NULL ? puts("List is empty.") : puts("");
@@ -62,7 +62,7 @@ void deleteNodes(int amount)
 
 int isEmpty()
 {
-    return head == NULL ? 0 : 1;     // If the current node is null
+    return head == NULL ? 0 : 1;
 }
 
 void checkInput(char input)
@@ -113,7 +113,7 @@ void checkInput(char input)
 int main(int argc, char* argv[])
 {
     // Map functions to STDIN
-    puts("->Enter the character inside of the () to select your mode.");
+    puts("->Enter the character inside of the () to select a mode.");
     puts("\n->Print (p)\n->Insert (i)\n->Delete (d)\n->Count (c)\n->Exit (e)\n->Debug (D)");
 
     char input;
